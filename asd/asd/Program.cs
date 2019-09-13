@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,30 +11,32 @@ namespace asd
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.CursorVisible=false;
             for (int j = 0; j < 13; j++)
             {
                 for (int i = j; i < 80; i++)
                 {
                     Console.SetCursorPosition(i-j, j);
-                    Console.Write("#");
+                    Console.Write("©");
                     Thread.Sleep(5);
                 }
                 for (int i = 0; i < 25; i++)
                 {
                     Console.SetCursorPosition(80-j, i);
-                    Console.Write("#");
+                    Console.Write("©");
                     Thread.Sleep(5);
                 }
                 for (int i = 80; i >= 1 ; i--)
                 {
                     Console.SetCursorPosition(i-1, 24-j);
-                    Console.Write("#");
+                    Console.Write("©");
                     Thread.Sleep(5);
                 }
                 for (int i = 24; i >= 1; i--)
                 {
                     Console.SetCursorPosition(0+j, i);
-                    Console.Write("#");
+                    Console.Write("©");
                     Thread.Sleep(5);
                 }
             }
